@@ -1,0 +1,496 @@
+/* ایمپورت Bootstrap RTL */
+@import "bootstrap/dist/css/bootstrap.rtl.min.css";
+
+/* CSS شخصی خودت */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Instrument Sans', sans-serif;
+  background: url('public/images/library-bg.jpg') center/cover fixed, linear-gradient(to bottom right, #e8f5e9, #ffffff);
+  background-blend-mode: lighten;
+  color: #333;
+  text-align: center;
+}
+
+
+/* ---------- هدر ---------- */
+header {
+  background-color: #2e7d32;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  padding: 15px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.h1-class {
+  font-size: 22px;
+  margin: 0;
+  margin-right: -55px;
+}
+
+
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+
+}
+
+.search {
+  float: inline-start;
+  display: flex;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+
+}
+
+
+/* ---------- منوی بالا ---------- */
+.navbar {
+  padding-top: 15px;
+}
+
+.navbar-nav  a:hover {
+  color: #ff9800 !important;
+}
+
+/* ---------- جستجوی کتاب ---------- */
+.search-section {
+  padding: 50px;
+  background-color: #ffffff;
+  margin: 30px auto;
+  width: 75%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.search-section h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.search1 {
+  width: 80%;
+  padding: 10px 90px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+
+.search {
+
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 40px;
+  margin-top: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.information-library {
+  display: inline-block;
+  background-color: #2e7d32; /* همان سبز قبلی */
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.information-library:hover {
+  background-color: #388e3c; /* همان سبز هاور قبلی */
+}
+
+
+/* ---------- اسلایدر (carousel) ---------- */
+.carousel-custom {
+  max-width: 850px;
+  margin: 25px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+/* ---------- افزودن کتابخانه ---------- */
+
+.sections-container {
+  display: flex;
+  flex-wrap: wrap; /* وقتی صفحه کوچیکه، بخش‌ها زیر هم میرن */
+  margin: 40px 80px; /* فاصله از بالا و پایین */
+}
+
+.add-library, .search-section {
+  min-width: 300px; /* حداقل عرض برای ریسپانسیو */
+  max-width: 900px; /* می‌تونی تغییر بدی */
+  box-sizing: border-box;
+  margin:  20px auto; /* حذف margin قدیمی که تو CSS داشتی */
+  padding: 20px ; /* padding داخلی */
+}
+
+/* رنگ و ظاهر بخش‌ها */
+.add-library, .search-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.add-library {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.information-library{
+    justify-content: right;
+}
+
+.information-library button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.information-library button:hover {
+  background-color: #388e3c;
+}
+
+/* ---------- فوتر ---------- */
+#foteer {
+  display: inline-block;
+  margin: 20px 15px;
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#foteer:hover {
+  color: #ff9800;
+}
+
+
+/* برای صفحه ثبت‌نام کاربران */
+body.Register-page ,
+.login-page {
+  display: flex;
+  flex-direction: column-reverse; /* کاربران نیاز دارن پیام بالای فرم باشه با این حالت */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: oklch(97.9% 0.021 166.113);
+  padding-top: 40px;
+}
+
+/* برای صفحه ثبت‌نام ادمین */
+body.admin-register-page {
+  display: flex;
+  flex-direction: column; /* ادمین پیام بالای فرم، فرم زیرش */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: oklch(97.9% 0.021 166.113);
+  padding-top: 40px;
+}
+
+
+
+.form-login ,
+.form-Register{
+  background-color: oklch(98.5% 0.001 106.423);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.form-Register input{
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%; /* عرض فیلدها */
+  border: 1px solid #ccc;
+}
+
+.form-login button ,.form-Register button{
+  width: 100%;
+  background-color: oklch(44.8% 0.119 151.328);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-login a ,
+.form-Register a{
+  text-decoration: none;
+  color: #2e7d32;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+
+.form-login input{
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%; /* عرض فیلدها */
+  border: 1px solid #ccc;
+}
+
+/* ---------- پنل ادمین ---------- */
+body.admin-page {
+  background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+  font-family: 'Vazirmatn', sans-serif;
+  text-align: center;
+}
+
+.container-admin {
+  width: 90%;
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.container-admin h1 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.container-admin h2 {
+  color: #388e3c;
+  margin-bottom: 20px;
+}
+
+/* جدول کاربران */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow: hidden; /* برای گرد شدن گوشه‌ها */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.users-table th {
+  background-color: #2e7d32;
+  color: white;
+  font-weight: 600;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f0f8f0;
+}
+
+.users-table tr:hover {
+  background-color: #dcedc8;
+  transition: 0.3s;
+}
+
+/* دکمه‌های مدیریت (اختیاری) */
+.users-table button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.users-table button:hover {
+  background-color: #388e3c;
+}
+
+/* دکمه حذف کاربران */
+.users-table .delete-btn {
+  background-color: #e53935; /* قرمز ملایم */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.users-table .delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+/* 🔹 صفحه لیست کتابخانه‌ها */
+
+.libraries-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.btn-add {
+    background: #2e7d32;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #d0f4de;
+    color: #1b5e20;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Grid */
+.libraries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* کارت کتابخانه */
+.library-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.library-card:hover {
+    transform: translateY(-4px);
+}
+
+/* کاور */
+.library-cover img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* توضیحات */
+.library-desc {
+    color: #555;
+    font-size: 14px;
+    height: 45px;
+}
+
+/* privacy tag */
+.privacy-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.privacy-tag.public {
+    background: #c8e6c9;
+    color: #2e7d32;
+}
+
+.privacy-tag.private {
+    background: #ffcdd2;
+    color: #c62828;
+}
+
+/* دکمه‌ها */
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-edit {
+    background: #ff9800;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-delete {
+    background: #e53935;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
