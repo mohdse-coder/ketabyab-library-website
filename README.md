@@ -23,7 +23,7 @@
 ![صفحه اصلی کتاب‌یاب](screenshots/home.png)
 
 ### صفحه ورود
-![صفحه ورود](screenshots/login.png)
+![صفحه ورود](login.png)
 ---
 
 # Ketabyab | Library Website
